@@ -1,0 +1,53 @@
+---
+title: Cto Bro.Com
+timezone: Europe/Paris
+collections:
+  call-to-action:
+    title: Call To Action
+    output: false
+  footer:
+    title: Footer
+    output: false
+  header:
+    title: Header
+    output: false
+  languages:
+    title: Languages
+    output: false
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: page
+  values:
+    layout: default
+    Language: 
+    SEO:
+      Title: 
+      Description: 
+    Header: 
+    Footer: 
+- scope:
+    path: home
+    type: page
+  values:
+    layout: home
+url: https://cto-bro.com
+description: 
+plugins:
+- jekyll-sitemap
+markdown: kramdown
+highlighter: rouge
+excerpt_separator: "<!--more-->"
+permalink: "/articles/:year-:month/:title"
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  enable_coderay: false
